@@ -19,6 +19,6 @@ public class TwoRangesSum {
             sum1 = sum1 + i;
         }
         System.out.printf("skipped sum is %d\n",sum2);
-        System.out.printf("counted sum is number %d\n",sum1);
+        System.out.printf("counted sum is %d\n",sum1);
     }
 }
