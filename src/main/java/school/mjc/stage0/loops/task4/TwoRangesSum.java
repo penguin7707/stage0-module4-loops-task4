@@ -12,10 +12,12 @@ public class TwoRangesSum {
         }
         int sum1 = 0, sum2=0;
         for(int i=0; i<lastInRow;i++){
-            if(i==numberToSkip) continue;
+            if(i<=numberToSkip) {
+                sum2 = sum2 +i;
+                continue;
+            }
             sum1 = sum1 + i;
         }
-        if(lastInRow!=numberToSkip) sum2 =lastInRow + numberToSkip;
         System.out.printf("skipped sum is %d\n",sum2);
         System.out.printf("counted sum is number %d\n",sum1);
     }
