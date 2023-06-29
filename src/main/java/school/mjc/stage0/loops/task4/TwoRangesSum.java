@@ -11,7 +11,7 @@ public class TwoRangesSum {
             return;
         }
         int sum1 = 0, sum2=0;
-        for(int i=0; i<lastInRow;i++){
+        for(int i=0; i<=lastInRow;i++){
             if(i<=numberToSkip) {
                 sum2 = sum2 +i;
                 continue;
