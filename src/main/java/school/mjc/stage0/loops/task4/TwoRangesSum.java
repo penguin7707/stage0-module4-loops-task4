@@ -3,11 +3,11 @@ package school.mjc.stage0.loops.task4;
 public class TwoRangesSum {
     public void printSumOfTwoRanges(int numberToSkip, int lastInRow) {
         if(lastInRow<0){
-            System.out.println("last number in row is negative");
+            System.out.print("last number in row is negative");
             return;
         }
         if(lastInRow<numberToSkip){
-            System.out.println("number to skip is bugger then the last");
+            System.out.print("number to skip is bugger then the last");
             return;
         }
         int sum1 = 0, sum2=0;
@@ -17,6 +17,6 @@ public class TwoRangesSum {
         }
         if(lastInRow!=numberToSkip) sum2 =lastInRow + numberToSkip;
         System.out.printf("skipped sum is %d\n",sum2);
-        System.out.printf("counted sum is number %d\n",sum1);
+        System.out.printf("counted sum is number %d",sum1);
     }
 }
